@@ -10,6 +10,6 @@ public class MainController {
     @GetMapping("/")
     public String index(Model model){
         model.addAttribute("message", "환영합니다.");
-        return "index";
+        return "main";
     }
 }
