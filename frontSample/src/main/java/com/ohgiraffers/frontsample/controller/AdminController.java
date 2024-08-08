@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AdminController {
 
-    @GetMapping("/admin")
+    @GetMapping("/index.html")
     public String admin(Model model){
         return "index";
+    }
+    @GetMapping("/layout-sidenav-light.html")
+    public String layoutsidenavlight(Model model){
+        return "layout-sidenav-light";
     }
 }
 
