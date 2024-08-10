@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AdminController {
-
+    /* 부트스트랩 관리자 페이지 */
     @GetMapping("/index.html")
     public String admin(Model model){
         return "index";

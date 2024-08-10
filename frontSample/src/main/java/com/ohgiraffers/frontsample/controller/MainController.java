@@ -12,4 +12,6 @@ public class MainController {
         model.addAttribute("message", "환영합니다.");
         return "main";
     }
+
+    
 }
