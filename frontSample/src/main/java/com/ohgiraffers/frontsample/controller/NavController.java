@@ -5,10 +5,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MainController {
-    /* 부트스트랩 메인 컨트롤*/
-    @GetMapping("/main")
-    public String main(Model model){
-        return "main/index";
+public class NavController {
+
+    @GetMapping("/")
+    public String index(Model model){
+        model.addAttribute("message", "환영합니다.");
+        return "main";
     }
+
+
 }
